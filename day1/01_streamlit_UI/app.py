@@ -3,6 +3,41 @@ import pandas as pd
 import numpy as np
 import time
 
+# ページ設定
+st.set_page_config(
+    page_title="Streamlit パステルデモ",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
+
+# パステルカラーCSS適用
+st.markdown("""
+<style>
+body {
+    background-color: #fdf6f0;
+}
+h1, h2, h3 {
+    color: #4b4b4b;
+}
+.stButton > button {
+    background-color: #b3d9ff;
+    color: #333;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    font-weight: bold;
+}
+.sidebar .sidebar-content {
+    background-color: #e6f2ff;
+}
+.stTextInput > div > input {
+    background-color: #ffffff;
+}
+.stMarkdown, .stText, .stDataFrame {
+    font-family: "Segoe UI", sans-serif;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # ============================================
 # ページ設定
 # ============================================
